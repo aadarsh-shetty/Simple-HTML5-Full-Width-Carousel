@@ -1,0 +1,87 @@
+.ms-container {
+    background: transparent url('../images/generic/arrow.png') no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.ms-container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+    min-height: 0;
+    visibility: hidden;
+}
+
+.ms-container .ms-selectable,
+.ms-container .ms-selection {
+    height: 328px;
+    background: #fff;
+    border: 1px #ccc solid;
+    float: left;
+}
+
+.ms-selected {
+    display: none;
+}
+
+
+/* .ms-container .ms-selectable{
+   margin-right: 43px; 
+} */
+
+.ms-container ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.ms-container ul.ms-list {
+    width: 223px;
+    height: 300px;
+    padding: 1px 0px;
+    overflow: auto;
+    text-align: left;
+}
+
+.ms-container .ms-selectable li.ms-elem-selectable,
+.ms-container .ms-selection li.ms-elem-selected {
+    border-bottom: 1px #eee solid;
+    background-image: url('../images/generic/minus.png') no-repeat 5px 10px;
+    padding: 3px 10px;
+    color: #555;
+}
+
+.ms-container .ms-selection li.ms-elem-selected {
+    padding-left: 22px;
+    color: #666;
+}
+
+.ms-container .ms-selectable li.disabled,
+.ms-container .ms-selection li.disabled {
+    background-color: #eee;
+    color: #aaa;
+}
+
+.ms-container .ms-optgroup-label {
+    padding: 5px 0px 0px 20px;
+    background: transparent url('../images/generic/plus.png') no-repeat 5px 10px;
+    cursor: pointer;
+    color: #999;
+}
+
+.ms-container .ms-optgroup-label.collapse {
+    background-image: url('../images/generic/minus.png');
+}
+
+.ms-container li.ms-elem-selectable:not(.disabled):hover,
+.ms-container .ms-selection li:not(.disabled):hover {
+    cursor: pointer;
+    background: #999;
+    color: #fff;
+}
+
+.ms-container .ms-selection li:not(.disabled):hover {
+    background: #666 url('../img/back-arrow.png') no-repeat 3px 3px;
+}
